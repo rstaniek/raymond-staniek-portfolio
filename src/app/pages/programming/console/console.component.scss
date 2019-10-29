@@ -1,0 +1,15 @@
+.console {
+    top:0;
+    bottom: 0;
+    width: 100vw;
+    min-height: 320px;
+    max-height: 100vh;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.c-container {
+    height: 100%;
+}

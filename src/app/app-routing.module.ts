@@ -6,6 +6,7 @@ import { ContactComponent } from "./pages/contact/contact.component";
 import { PhotographyComponent } from "./pages/photography/photography.component";
 import { ShellComponent } from "./shell/shell.component";
 import { ProgrammingComponent } from './pages/programming/programming.component';
+import { ConsoleComponent } from './pages/programming/console/console.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
         ]
       },
       { path: "photography", component: PhotographyComponent, children: [] },
+      { path: 'dev-console', component: ConsoleComponent },
 
       //default:
       { path: "", pathMatch: "full", redirectTo: "home" }

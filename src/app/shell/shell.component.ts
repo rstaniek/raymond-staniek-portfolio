@@ -1,6 +1,6 @@
 import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import { NavItem } from '@models/nav-item';
-import { NavService } from '@services/nav/nav.service';
+import { NavService } from '@app/services/nav/nav.service';
 
 @Component({
   selector: 'app-shell',
@@ -72,6 +72,11 @@ export class ShellComponent implements AfterViewInit {
       displayName: 'Contact',
       iconName: 'contacts',
       route: 'contact'
+    },
+    {
+      displayName: 'Dev',
+      iconName: 'keyboard',
+      route: 'dev-console'
     }
   ];
 

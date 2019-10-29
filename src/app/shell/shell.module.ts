@@ -5,7 +5,7 @@ import { NavMenuItemComponent } from './nav-menu-item/nav-menu-item.component';
 import { MaterialModule } from '../app.angular-material.module';
 import { ShellComponent } from './shell.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavService } from '@services/nav/nav.service';
+import { NavService } from '@app/services/nav/nav.service';
 import { AppRoutingModule } from '@app/app-routing.module';
 
 @NgModule({

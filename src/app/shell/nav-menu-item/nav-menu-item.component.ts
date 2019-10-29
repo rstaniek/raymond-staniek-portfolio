@@ -8,7 +8,7 @@ import {
   trigger
 } from "@angular/animations";
 import { NavItem } from "@models/nav-item";
-import { NavService } from '@services/nav/nav.service';
+import { NavService } from '@app/services/nav/nav.service';
 
 @Component({
   selector: "app-nav-menu-item",
