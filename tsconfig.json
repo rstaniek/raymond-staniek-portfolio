@@ -12,6 +12,12 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "paths": {
+      "@models/*": ["src/app/model/*"],
+      "@services/*": ["src/app/service/*"],
+      "@assets/*": ["src/assets/*"],
+      "@app/*": ["src/app/*"]
+    },
     "typeRoots": [
       "node_modules/@types"
     ],
