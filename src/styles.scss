@@ -12,14 +12,14 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$rajmund-portfolio-primary: mat-palette($mat-indigo);
-$rajmund-portfolio-accent: mat-palette($mat-pink, A200, A100, A400);
+$app-primary: mat-palette($mat-purple, 700, 400, 900);
+$app-accent: mat-palette($mat-amber, 500, A100, A700);
 
 // The warn palette is optional (defaults to red).
-$rajmund-portfolio-warn: mat-palette($mat-red);
+$app-warn: mat-palette($mat-orange);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$rajmund-portfolio-theme: mat-light-theme($rajmund-portfolio-primary, $rajmund-portfolio-accent, $rajmund-portfolio-warn);
+$rajmund-portfolio-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component

@@ -1,5 +1,5 @@
 @import "../breakpoints";
-@import "../theme";
+@import "../../styles";
 
 .shell {
   display: flex;
@@ -17,8 +17,8 @@
 
 .mat-sidenav-container {
   background-color: white !important;
-    height: 100vh;
-    
+  height: 100vh;
+
   .mat-sidenav-content {
     display: flex;
     flex-direction: column;
