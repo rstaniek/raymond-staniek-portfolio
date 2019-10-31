@@ -8,7 +8,6 @@ export class TerminalService {
   constructor() { }
 
   public parseCommand(args: string[]): TerminalResponse {
-    console.log('Parsing command: ' + args);
     if(args === undefined || args.length === 0){
       return TerminalResponse.empty;
     } else {

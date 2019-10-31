@@ -1,0 +1,28 @@
+.backdrop {
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.anim {
+    background-image: url('https://66.media.tumblr.com/e7cfe0074ae5fd4bd2f47735e9f53206/tumblr_mkwpqrtiJN1rsdpaso1_500.gifv');
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 20px auto 50px auto;
+}
+
+.text {
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+}

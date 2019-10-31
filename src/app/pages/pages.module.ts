@@ -7,6 +7,8 @@ import { ProgrammingModule } from './programming/programming.module';
 import { PhotographyModule } from './photography/photography.module';
 import { MaterialModule } from '@app/app.angular-material.module';
 import { SharedComponentsModule } from '@app/shared-components/shared-components.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from '@app/app-routing.module';
 
 @NgModule({
   declarations: [NotFoundComponent, HomeComponent, ContactComponent],
@@ -15,7 +17,10 @@ import { SharedComponentsModule } from '@app/shared-components/shared-components
     ProgrammingModule,
     PhotographyModule,
     MaterialModule,
-    SharedComponentsModule
+    FormsModule,
+    ReactiveFormsModule,
+    SharedComponentsModule,
+    AppRoutingModule
   ],
   exports: [NotFoundComponent]
 })
