@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
 import { NgTerminal } from "ng-terminal";
 import { TerminalService } from "@app/services/terminal/terminal.service";
+import { TerminalResponse } from '@models/terminal-response';
+import { TerminalOperation } from '@models/enums/terminal-operation.enum';
 
 @Component({
   selector: "app-console",
@@ -33,7 +35,7 @@ export class ConsoleComponent implements AfterViewInit {
         this.charBuffer = new Array<string>();
         //invoke action
         const response = this.terminalService.parseCommand(this.args);
-        this.printResponse(response);
+        this.processResponse(response);
         this.terminal.write("\r\n" + this.linePrefix);
       } else if (ev.keyCode === 8) {
         if (this.terminal.underlying.buffer.cursorX > this.linePrefix.length) {
@@ -45,6 +47,19 @@ export class ConsoleComponent implements AfterViewInit {
         this.charBuffer.push(e.key);
       }
     });
+  }
+
+  private processResponse(response: TerminalResponse): void {
+    if(response.text.length !== 0){
+      this.printResponse(response.text);
+    }
+    switch(response.command){
+      case TerminalOperation.ClearScreen:
+        this.terminal.underlying.clear();
+        break;
+      case TerminalOperation.None:
+        break;
+    }
   }
 
   private printResponse(resp: string[]): void {
