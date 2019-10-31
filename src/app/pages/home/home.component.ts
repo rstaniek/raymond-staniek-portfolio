@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
       "title",
       "https://material.angular.io/assets/img/examples/shiba2.jpg",
       "asdasdasdasdasdasdasdasdasdasd",
-      "subtitle"
+      "subtitle",
+      "https://media.giphy.com/media/10kxE34bJPaUO4/giphy.gif"
     );
     const b: CardArticle = new CardArticle(
       "title",
