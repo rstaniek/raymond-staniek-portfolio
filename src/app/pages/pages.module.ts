@@ -9,6 +9,7 @@ import { MaterialModule } from '@app/app.angular-material.module';
 import { SharedComponentsModule } from '@app/shared-components/shared-components.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from '@app/app-routing.module';
+import { GalleryModule } from './gallery/gallery.module';
 
 @NgModule({
   declarations: [NotFoundComponent, HomeComponent, ContactComponent],
@@ -20,7 +21,8 @@ import { AppRoutingModule } from '@app/app-routing.module';
     FormsModule,
     ReactiveFormsModule,
     SharedComponentsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GalleryModule
   ],
   exports: [NotFoundComponent]
 })

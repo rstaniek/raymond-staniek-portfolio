@@ -7,6 +7,8 @@ import { PhotographyComponent } from "./pages/photography/photography.component"
 import { ShellComponent } from "./shell/shell.component";
 import { ProgrammingComponent } from './pages/programming/programming.component';
 import { ConsoleComponent } from './pages/programming/console/console.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { PhotographyAutomotiveComponent } from './pages/gallery/photography-automotive/photography-automotive.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,9 @@ const routes: Routes = [
         ]
       },
       { path: "photography", component: PhotographyComponent, children: [] },
+      { path: "photography/gallery", component: GalleryComponent, children: [
+        { path: "automotive", component: PhotographyAutomotiveComponent }
+      ]},
       { path: 'dev-console', component: ConsoleComponent },
 
       //default:

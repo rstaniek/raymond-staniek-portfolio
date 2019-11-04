@@ -47,17 +47,17 @@ export class ShellComponent implements AfterViewInit {
             {
               displayName: 'Automotive',
               iconName: 'directions_car',
-              route: 'photography/p-automotive'
+              route: 'photography/gallery/automotive'
             },
             {
               displayName: 'Culinary',
               iconName: 'fastfood',
-              route: 'photography/p-culinary'
+              route: 'photography/gallery/culinary'
             },
             {
               displayName: 'Portrait',
               iconName: 'person_outline',
-              route: 'photography/p-portraits'
+              route: 'photography/gallery/portraits'
             }
           ]
         },
