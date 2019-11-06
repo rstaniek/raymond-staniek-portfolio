@@ -30,3 +30,11 @@ $rajmund-portfolio-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container-1400 {
+    max-width: 1400px;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
